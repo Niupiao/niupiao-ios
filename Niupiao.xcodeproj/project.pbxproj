@@ -14,6 +14,9 @@
 		E272700D1AAAA4FE00C343FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E272700C1AAAA4FE00C343FD /* Images.xcassets */; };
 		E27270101AAAA4FE00C343FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E272700E1AAAA4FE00C343FD /* LaunchScreen.xib */; };
 		E272701C1AAAA4FE00C343FD /* NiupiaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E272701B1AAAA4FE00C343FD /* NiupiaoTests.swift */; };
+		E27270281AAAAB8800C343FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27270271AAAAB8800C343FD /* User.swift */; };
+		E272702A1AAAABCF00C343FD /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27270291AAAABCF00C343FD /* Ticket.swift */; };
+		E272702C1AAAAC3600C343FD /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E272702B1AAAAC3600C343FD /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		E27270151AAAA4FE00C343FD /* NiupiaoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiupiaoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E272701A1AAAA4FE00C343FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E272701B1AAAA4FE00C343FD /* NiupiaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiupiaoTests.swift; sourceTree = "<group>"; };
+		E27270271AAAAB8800C343FD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E27270291AAAABCF00C343FD /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		E272702B1AAAAC3600C343FD /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		E2726FFF1AAAA4FE00C343FD /* Niupiao */ = {
 			isa = PBXGroup;
 			children = (
+				E27270261AAAAB6400C343FD /* requesters */,
+				E27270251AAAAAF500C343FD /* models */,
 				E27270021AAAA4FE00C343FD /* AppDelegate.swift */,
 				E27270071AAAA4FE00C343FD /* ViewController.swift */,
 				E27270091AAAA4FE00C343FD /* Main.storyboard */,
@@ -113,6 +121,23 @@
 				E272701A1AAAA4FE00C343FD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E27270251AAAAAF500C343FD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E27270271AAAAB8800C343FD /* User.swift */,
+				E27270291AAAABCF00C343FD /* Ticket.swift */,
+				E272702B1AAAAC3600C343FD /* Event.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		E27270261AAAAB6400C343FD /* requesters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = requesters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,8 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27270281AAAAB8800C343FD /* User.swift in Sources */,
 				E27270081AAAA4FE00C343FD /* ViewController.swift in Sources */,
+				E272702A1AAAABCF00C343FD /* Ticket.swift in Sources */,
 				E27270031AAAA4FE00C343FD /* AppDelegate.swift in Sources */,
+				E272702C1AAAAC3600C343FD /* Event.swift in Sources */,
 				E27270061AAAA4FE00C343FD /* Niupiao.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
