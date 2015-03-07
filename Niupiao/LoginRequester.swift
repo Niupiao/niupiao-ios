@@ -1,5 +1,5 @@
 //
-//  EventsRequester.swift
+//  LoginRequester.swift
 //  Niupiao
 //
 //  Created by Kevin Chen on 3/7/15.
@@ -8,20 +8,22 @@
 
 import Foundation
 
-class EventsRequester {
+class LoginRequester {
     
-    class func eventsLoaded(data: NSData!, response: NSURLResponse!, error: NSError!) {}
-    
-    class func loadEvents() {
-        let url = NSURL(string: Constants.Url.EVENTS_URL)!
+    class func login(username: String, password: String) {
+        let url = NSURL(string: Constants.Url.LOGIN_URL)!
         let session = NSURLSession.sharedSession()
         let networkTask = session.dataTaskWithURL(url, completionHandler : { data, response, error -> Void in
             var err: NSError?
-            var theJSON = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as [AnyObject]
+            var json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as [String:String]
+            for (key,value) in json {
+                println("\(key) -> \(value)")
+            }
             // TODO serialize into Objects and pass back to callback
+            
         })
         networkTask.resume()
-        NSLog("#loadEvents")
+
     }
     
 }
