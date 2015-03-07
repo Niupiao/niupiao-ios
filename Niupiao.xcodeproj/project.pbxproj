@@ -17,6 +17,7 @@
 		E27270281AAAAB8800C343FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27270271AAAAB8800C343FD /* User.swift */; };
 		E272702A1AAAABCF00C343FD /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27270291AAAABCF00C343FD /* Ticket.swift */; };
 		E272702C1AAAAC3600C343FD /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E272702B1AAAAC3600C343FD /* Event.swift */; };
+		E272702E1AAAAEA400C343FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E272702D1AAAAEA400C343FD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E27270271AAAAB8800C343FD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E27270291AAAABCF00C343FD /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		E272702B1AAAAC3600C343FD /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		E272702D1AAAAEA400C343FD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				E272700E1AAAA4FE00C343FD /* LaunchScreen.xib */,
 				E27270041AAAA4FE00C343FD /* Niupiao.xcdatamodeld */,
 				E27270001AAAA4FE00C343FD /* Supporting Files */,
+				E272702D1AAAAEA400C343FD /* Constants.swift */,
 			);
 			path = Niupiao;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				E27270081AAAA4FE00C343FD /* ViewController.swift in Sources */,
 				E272702A1AAAABCF00C343FD /* Ticket.swift in Sources */,
 				E27270031AAAA4FE00C343FD /* AppDelegate.swift in Sources */,
+				E272702E1AAAAEA400C343FD /* Constants.swift in Sources */,
 				E272702C1AAAAC3600C343FD /* Event.swift in Sources */,
 				E27270061AAAA4FE00C343FD /* Niupiao.xcdatamodeld in Sources */,
 			);
