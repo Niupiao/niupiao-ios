@@ -10,7 +10,7 @@ import Foundation
 
 class LoginRequester {
         
-    class func login(username: String, password: String) {
+    class func login(delegate: LoginDelegate, username: String, password: String) {
         let url = NSURL(string: Constants.Url.LOGIN_URL)!
         let session = NSURLSession.sharedSession()
         let networkTask = session.dataTaskWithURL(url, completionHandler : { data, response, error -> Void in

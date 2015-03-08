@@ -17,4 +17,11 @@ class Constants {
         static let TICKETS_URL = BASE_URL + "/me/tickets.json"
     }
     
+    struct UserDefaultKeys {
+        static let USERNAME = "username"
+        static let PASSWORD = "password"
+        static let REMEMBER_ME = "remember_me"
+        static let ACCESS_TOKEN = "access_token"
+    }
+    
 }

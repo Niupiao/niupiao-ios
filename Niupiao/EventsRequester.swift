@@ -12,7 +12,7 @@ class EventsRequester {
     
     class func eventsLoaded(data: NSData!, response: NSURLResponse!, error: NSError!) {}
     
-    class func loadEvents() {
+    class func loadEvents(delegate: EventsDelegate) {
         let url = NSURL(string: Constants.Url.EVENTS_URL)!
         let session = NSURLSession.sharedSession()
         let networkTask = session.dataTaskWithURL(url, completionHandler : { data, response, error -> Void in
