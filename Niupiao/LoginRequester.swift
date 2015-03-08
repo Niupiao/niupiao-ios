@@ -9,7 +9,7 @@
 import Foundation
 
 class LoginRequester {
-    
+        
     class func login(username: String, password: String) {
         let url = NSURL(string: Constants.Url.LOGIN_URL)!
         let session = NSURLSession.sharedSession()
