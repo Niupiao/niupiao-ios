@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol EventsDelegate {
+    func didLoadEvents(events: [Event])
+}
+
 class EventsRequester {
     
     class func eventsLoaded(data: NSData!, response: NSURLResponse!, error: NSError!) {}
@@ -17,7 +21,7 @@ class EventsRequester {
         let session = NSURLSession.sharedSession()
         let networkTask = session.dataTaskWithURL(url, completionHandler : { data, response, error -> Void in
             var err: NSError?
-            var theJSON = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as [AnyObject]
+            var theJSON = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as! [AnyObject]
             // TODO serialize into Objects and pass back to callback
         })
         networkTask.resume()

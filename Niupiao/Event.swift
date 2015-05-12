@@ -9,17 +9,17 @@
 import Foundation
 
 class Event {
-    var id : Int
-    var name : String
-    var organizer : String
-    var date : String
-    var location : String
-    var description : String
-    var link : String
-    var imagePath : String
-    var totalTickets : Int
-    var ticketsSold : Int
-    var tickets : [Ticket]?
+    var id: Int
+    var name: String
+    var organizer: String
+    var date: String
+    var location: String
+    var description: String
+    var link: String
+    var imagePath: String
+    var totalTickets: Int
+    var ticketsSold: Int
+    var tickets: [Ticket]?
 
     init(id: Int, name: String, organizer: String, date: String, location: String, description: String, link: String, imagePath: String, totalTickets: Int, ticketsSold: Int) {
         self.id = id

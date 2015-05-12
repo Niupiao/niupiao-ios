@@ -10,8 +10,8 @@ import Foundation
 
 class ApiKey {
     
-    var accessToken : String
-    var expiresAt : String
+    var accessToken: String
+    var expiresAt: String
     
     init(accessToken: String, expiresAt: String) {
         self.accessToken = accessToken

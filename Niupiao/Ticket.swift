@@ -10,12 +10,12 @@ import Foundation
 
 class Ticket {
     
-    var id : Int
-    var eventId : Int
-    var event : Event?
-    var userId : Int
-    var price : Int
-    var status : String
+    var id: Int
+    var eventId: Int
+    var event: Event?
+    var userId: Int
+    var price: Int
+    var status: String
     
     init(id: Int, eventId: Int, event: Event, userId: Int, price: Int, status: String) {
         self.id = id

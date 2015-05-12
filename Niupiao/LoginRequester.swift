@@ -8,14 +8,24 @@
 
 import Foundation
 
+protocol LoginDelegate {
+    func didLogin(user: User, apiKey: ApiKey)
+}
+
 class LoginRequester {
         
-    class func login(delegate: LoginDelegate, username: String, password: String) {
+    class func loginWithDelegate(delegate: LoginDelegate, username: String, password: String) {
+        
+        // the login endpoint
         let url = NSURL(string: Constants.Url.LOGIN_URL)!
+        
+        // a session
         let session = NSURLSession.sharedSession()
+        
+        // the login task
         let networkTask = session.dataTaskWithURL(url, completionHandler : { data, response, error -> Void in
             var err: NSError?
-            var json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as [String:String]
+            var json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as! [String:String]
             for (key,value) in json {
                 println("\(key) -> \(value)")
             }
